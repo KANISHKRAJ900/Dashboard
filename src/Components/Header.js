@@ -10,12 +10,14 @@ export default function Header() {
   return (
     <div>
       <AppBar position="fixed">
-        <Toolbar className="navbar" style={{backgroundColor:'#343a40'}}>
+        <Toolbar className="navbar" style={{ backgroundColor: "#343a40" }}>
           <div className="navbar-brand d-flex" onClick={() => setOpen(!open)}>
-            <span className="mobile d-block d-sm-none">{open ?<Dehaze />  :<Close /> }</span>
+            <span className="mobile d-block d-sm-none">
+              {open ? <Dehaze /> : <Close />}
+            </span>
             <span>Header</span>
           </div>
-          <div>Home </div>
+          <div>Logout </div>
         </Toolbar>
       </AppBar>
       <div className="mt-5">

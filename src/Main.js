@@ -22,13 +22,18 @@ export default function Main() {
                 <b> Your Dashboard</b>
               </Typography>
             </div>
-            <div className="col-sm-8 ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              quibusdam dignissimos praesentium nobis, doloribus distinctio
-              doloremque eius? Illum officiis sapiente hic iure voluptatem vel
-              accusamus nulla dolorem dolore quod. Eos, quis cupiditate totam
-              qui provident animi sed aliquam placeat reiciendis, explicabo
-              dolorum dicta quo, officiis earum cum illum velit impedit.
+            <div className="col-sm-8 mt-3">
+              <div className="avatr">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime non eveniet consectetur nostrum consequatur soluta
+                  possimus aliquam inventore vero omnis ullam velit quas
+                  aspernatur, nam voluptas, iure ad. Ullam minus aperiam
+                  repudiandae? Tempora, necessitatibus velit! Commodi ducimus
+                  error veniam quod provident consequuntur dolor laudantium?
+                  Tempora tenetur ut sunt voluptatem modi.
+                </p>
+              </div>
             </div>
             <div className="col-sm-4 mt-3 ">
               <div className="profile_style">
@@ -44,8 +49,12 @@ export default function Main() {
                   </Typography>
                 </div>
                 <div>
-                  <Button variant="contained" color="primary" className="mt-3">
-                    <b>View Profile</b>
+                  <Button
+                    variant="contained"
+                    size="small"
+                    className="bg-dark text-white mt-3"
+                  >
+                    View Profile
                   </Button>
                 </div>
               </div>
@@ -58,7 +67,7 @@ export default function Main() {
               </Typography>
               <div className="table-responsive">
                 <table className="table text-center">
-                  <thead>
+                  <thead className="thcolor">
                     <tr className="tablebody ">
                       <th className="tdwidth"> Profile</th>
                       <th className="tdwidth"> Name</th>
@@ -82,15 +91,19 @@ export default function Main() {
                             alt="profile"
                           />
                         </td>
-                        <td className="tdwidth mt-1">{item.name} </td>
-                        <td className="tdwidth px-5 mt-1 ">
-                          <b>Reciver</b>
+                        <td className="tdwidth mt-1">
+                          <b>{item.name} </b>
                         </td>
+                        <td className="tdwidth px-5 mt-1 ">REciver</td>
                         <td className="tdwidth mt-1" colSpan={2}>
                           Lorem ipsum dolor sit amet.
                         </td>
                         <td className="tdwidth mt-1">
-                          <Button variant="contained" color="primary">
+                          <Button
+                            variant="contained"
+                            className="bg-dark"
+                            size="small"
+                          >
                             Accept
                           </Button>
                         </td>
@@ -140,7 +153,9 @@ export default function Main() {
               <div className="row mt-3">
                 <div className="col-12">
                   <div className="profile_style">
-                    <h5>Heading Goes here</h5>
+                    <h5>
+                      <b>Heading Goes here</b>
+                    </h5>
                     <p>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Totam qui beatae, nam incidunt consequatur possimus quae

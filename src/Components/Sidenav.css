@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+a{
+    text-decoration: none;
+  color: #a7bbeb;
+}
+a:hover{
+    color: #fff;
+}
 
 html {
   scroll-behavior: smooth;
@@ -91,10 +98,10 @@ display: none;
   color: #fff;
 }
 .sidenav__button:focus-visible {
-  outline: 2px solid #2c5bd0;
+  outline: 2px solid #424242;
 }
 .sidenav__button:focus-visible, .sidenav__button:hover {
-  background: #0d43c9;
+  background: #424242;
   color: #fff;
 }
 
@@ -176,7 +183,7 @@ display: none;
   min-width: 1px;
   height: 2.5rem;
   border: none;
-  background: #0d43c9;
+  background: #424242;
   border-radius: 0.5rem;
   color: #fff;
   padding: 0 2.5rem 0 1rem;
@@ -231,10 +238,10 @@ display: none;
   background: none;
 }
 .nav:hover {
-  scrollbar-color: #a7bbeb #2c5bd0;
+  scrollbar-color: #a7bbeb #424242;
 }
 .nav:hover::-webkit-scrollbar-track {
-  background: #2c5bd0;
+  background: #424242;
 }
 
 .nav__list {
@@ -255,7 +262,7 @@ display: none;
   display: block;
   content: "";
   height: 0.99px;
-  background: #2c5bd0;
+  background: #424242;
 }
 
 .nav__item {
@@ -286,10 +293,10 @@ display: none;
   color: #fff;
 }
 .nav__button:focus-visible {
-  outline: 2px solid #2c5bd0;
+  outline: 2px solid #424242;
 }
 .nav__button:focus-visible, .nav__button:hover {
-  background: #0d43c9;
+  background: #424242;
   color: #fff;
 }
 
@@ -378,10 +385,10 @@ display: none;
   color: #fff;
 }
 .user__button:focus-visible {
-  outline: 2px solid #2c5bd0;
+  outline: 2px solid #424242;
 }
 .user__button:focus-visible, .user__button:hover {
-  background: #0d43c9;
+  background: #424242;
   color: #fff;
 }
 
