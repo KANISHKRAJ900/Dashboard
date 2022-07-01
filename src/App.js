@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from "./Components/Auth/Login";
 import GlobalState from "./Components/Context/GlobalState";
+import Social from "./Components/Pages/Social";
 import Main from "./Main";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Route exact path="/dashboard" component={Main} />
+            <Route exact path="/social" component={Social} />
             <Route exact path="/login" component={Login} />
             <Route path="/" component={Login} />
           </Switch>
