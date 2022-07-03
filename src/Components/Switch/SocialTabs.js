@@ -4,10 +4,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Feed from "./Feed";
-import { PersonAddAlt1 } from "@mui/icons-material";
-import { Avatar } from "@mui/material";
+import Feed from "./SocialFeed";
 import Friends from "../Neccessary/Friends";
+import FriendsSkeleton from "../Neccessary/Skeleton/FriendsSkeleton";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,6 +43,7 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
+  const [empty, setEmpty] = React.useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -51,31 +51,33 @@ export default function BasicTabs() {
   console.log("value", value);
 
   return (
-    <Box sx={{ width: "100%", mt: 5 }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab label="Feeds" {...a11yProps(0)} />
-          <Tab label="Friends" {...a11yProps(1)} />
-          <Tab label="Pending" {...a11yProps(2)} />
-          <Tab label="Trash" {...a11yProps(3)} />
-        </Tabs>
+    <>
+      <Box sx={{ width: "100%", mt: 5 }}>
+        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+          <Tabs
+            value={value}
+            onChange={handleChange}
+            aria-label="basic tabs example"
+          >
+            <Tab label="One" {...a11yProps(0)} />
+            <Tab label="Friends" {...a11yProps(1)} />
+            <Tab label="Pending" {...a11yProps(2)} />
+            <Tab label="Trash" {...a11yProps(3)} />
+          </Tabs>
+        </Box>
+        <TabPanel value={value} index={0}>
+          one
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <Friends value={value} />
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <Friends value={value} />
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          Item Four
+        </TabPanel>
       </Box>
-      <TabPanel value={value} index={0}>
-        <Feed />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <Friends value={value} />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <Friends value={value} />
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
-      </TabPanel>
-    </Box>
+    </>
   );
 }

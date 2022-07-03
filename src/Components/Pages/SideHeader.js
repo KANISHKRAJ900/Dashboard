@@ -3,6 +3,7 @@ import {
   CalendarMonth,
   ContactPage,
   Facebook,
+  Feed,
   Home,
   Mail,
   Settings,
@@ -31,9 +32,9 @@ export const mainHeader = [
     icon: <AddBox />,
   },
   {
-    name: "Calendar",
-    link: "/calendar",
-    icon: <CalendarMonth />,
+    name: "Feeds",
+    link: "/feeds",
+    icon: <Feed />,
   },
   {
     name: "Contacts",

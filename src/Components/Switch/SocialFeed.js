@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import { Avatar, CardHeader, IconButton } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-export default function Feed() {
+export default function SocialFeed() {
   return (
     <div className="container-fluid">
       <div className="row">
