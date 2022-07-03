@@ -1,0 +1,21 @@
+.coverimg{
+    position: relative;
+}
+.frontimg{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+}
+.addicon{
+ background-color: #e91e63;
+ padding: 7px;
+    border-radius: 100%;
+}
+.addicon:hover{
+    background-color: #f48fb1;
+}
+
